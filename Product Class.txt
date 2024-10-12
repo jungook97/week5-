@@ -1,0 +1,23 @@
+// Пример использования класса
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Создаем два счета
+        BankAccount account1 = new BankAccount("123456", "Ivan Ivanov");
+        BankAccount account2 = new BankAccount("789101", "Petr Petrov");
+
+        // Пополняем первый счет
+        account1.Deposit(1000);
+        Console.WriteLine(account1.GetAccountInfo()); // Вывод информации о первом счете
+
+        // Снимаем деньги со счета
+        account1.Withdraw(200);
+        Console.WriteLine(account1.GetAccountInfo()); // Вывод обновленной информации о первом счете
+
+        // Переводим деньги на второй счет
+        account1.Transfer(account2, 300);
+        Console.WriteLine(account1.GetAccountInfo()); // Вывод обновленной информации о первом счете
+        Console.WriteLine(account2.GetAccountInfo()); // Вывод информации о втором счете
+    }
+}

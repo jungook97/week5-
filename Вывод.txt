@@ -1,0 +1,7 @@
+Вывод:
+Account number: 123456, Owner: Ivan Ivanov, Balance: ?1,000.00
+Account number: 123456, Owner: Ivan Ivanov, Balance: ?800.00
+Account number: 123456, Owner: Ivan Ivanov, Balance: ?500.00
+Account number: 789101, Owner: Petr Petrov, Balance: ?300.00
+
+=== Code Execution Successful ===
